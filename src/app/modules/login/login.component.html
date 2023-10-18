@@ -1,1 +1,15 @@
-<p>login works!</p>
+<div class="login-container">
+    <h2>Login</h2>
+    <form (ngSubmit)="login()">
+      <div class="form-group">
+        <label for="registration">Registro Acadêmico:</label>
+        <input type="text" id="registration" name="registration" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
+  
