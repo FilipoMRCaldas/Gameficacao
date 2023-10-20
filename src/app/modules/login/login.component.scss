@@ -1,53 +1,94 @@
-.login-container {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #023047;
+}
+
+.page {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
-  text-align: center;
-  
-  .content {
-    background-color: #530357;
+  background: linear-gradient(
+    180deg,
+    #1c013f 65.1%,
+    #670c51 100%,
+    #e1c3da 100%,
+    #530357 100%
+  );
 
-    h2 {
-      font-size: 24px;
-      margin-bottom: 20px;
-      color: #333;
+  .dragon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .star {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+  }
+}
+
+.formLogin {
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+  margin-bottom: 6rem;
+  padding: 40px;
+  gap: 1rem;
+
+  input {
+    padding: 15px;
+    font-size: 14px;
+    border: 0.1rem solid #530357;
+    background-color: transparent;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 4px;
+    transition: all linear 160ms;
+    outline: none;
+
+    &:focus {
+      border: 1px solid #f72585;
     }
+  }
 
-    & .form-group {
-      margin-bottom: 15px;
-      text-align: left;
+  a {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #555;
+    text-align: end;
+    transition: all linear 160ms;
 
-      label {
-        display: block;
-        font-weight: bold;
-        margin-bottom: 5px;
-      }
-
-      input {
-        width: 100%;
-        padding: 0.5rem 0;
-        font-size: 16px;
-        border: 0.1rem solid #530357;
-        border-radius: 5px;
-      }
+    &:hover {
+      color: #f72585;
     }
+  }
 
-    button {
-      padding: 0.5rem 4rem;
-      background-color: #ffd600;
-      color: #fff;
-      border: 0.2rem solid #cb9406;
-      border-radius: 0.8rem;
-      font-size: 1.2rem;
-      cursor: pointer;
-      text-transform: uppercase;
+  .btn {
+    background-color: #f72585;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border: none !important;
+    transition: all linear 160ms;
+    cursor: pointer;
+    margin: 0 !important;
+    text-transform: uppercase;
 
-      &:hover {
-        background-color: #cb9406;
-      }
+    &:hover {
+      transform: scale(1.05);
+      background-color: #ff0676;
     }
   }
 }

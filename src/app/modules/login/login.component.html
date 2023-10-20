@@ -1,26 +1,12 @@
-<div class="login-container">
-  <div class="content">
-    <img src="assets/images/ceubgame.svg" alt="" />
-    <form (ngSubmit)="login()">
-      <div class="form-group">
-        <input
-          placeholder="RA"
-          type="text"
-          id="registration"
-          name="registration"
-          required
-        />
-      </div>
-      <div class="form-group">
-        <input
-          placeholder="Senha"
-          type="password"
-          id="password"
-          name="password"
-          required
-        />
-      </div>
-      <button type="submit">Entrar</button>
-    </form>
-  </div>
+<div class="page">
+  <img class="dragon" src="assets/images/dragon.svg" alt="">
+  <img class="star" src="assets/images/star.svg" alt="">
+
+  <form method="POST" class="formLogin">
+    <img src="assets/images/ceubgame.svg" alt="">
+    <input class="ra" type="text" placeholder="RA" autofocus="true" />
+    <input class="senha" type="password" placeholder="Senha" />
+    <a href="/">Esqueci minha senha</a>
+    <input type="submit" value="Entrar" class="btn" />
+  </form>
 </div>

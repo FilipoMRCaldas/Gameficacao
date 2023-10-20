@@ -1,10 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'gameficacao';
+export class AppComponent implements OnInit {
+  showLogin = false;
+
+  ngOnInit(): void {
+    setTimeout(() => {
+      this.showLogin = true;
+    }, 2000);
+  }
 }
