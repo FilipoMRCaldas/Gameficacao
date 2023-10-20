@@ -1,2 +1,2 @@
 <app-login *ngIf="showLogin"></app-login>
-<app-splash-screen class="splash-screen"></app-splash-screen>
+<app-splash-screen *ngIf="!showLogin" class="splash-screen"></app-splash-screen>
