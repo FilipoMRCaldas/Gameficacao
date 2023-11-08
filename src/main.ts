@@ -1,7 +1,8 @@
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
+import passaporteServices from './app/services/passaporteServices';
 import { AppModule } from './app/app.module';
 
+export class main {
+  
+}
 
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.error(err));
